@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop and Soil Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- box icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- swipper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <header>
+            <a href="#" class="logo"><i class='bx bxs-leaf'></i>SoilSavvy</a>
+            <li><a href="index.html" id="list">Home</a></li>
+            <li><a href="home.html"id="list">Register</a></li>
+            <li><a href="todo.html"id="list">Schedule</a></li>
+            <li><a href="article.html"id="list">Article</a></li>
+        </header>
+    </header>
+    <main>
+        <section id="crop-selection-section">
+            <h2> பயிர் தேர்வு வழிகாட்டி</h2>
+            <form id="crop-selection-form">
+                <label for="soil-type"> மண் வகை:</label>
+                <select id="soil-type" required>
+                    <option value="வண்டல்">வண்டல் மண்</option>
+                    <option value="கருப்பு">கருப்பு மண்</option>
+                    <option value="சிவப்பு">செம்மண்</option>
+                    <option value="மலை">மலை மண்</option>
+                    <option value="வறண்ட">வறண்ட மண்</option>
+                    <option value="கரிமண்">கரி மண்</option>
+                    <option value="உவர்நிலம்">உவர்மண்</option>
+                </select>
+                <label for="weather-conditions">வானிலை:</label>
+                <select id="weather-conditions"  required>
+                    <option value="கோடை">கோடை காலம்</option>
+                    <option value="குளிர்காலம்">குளிர் காலம்</option>
+                    <option value="இலையுதிர்">இலையுதிர் காலம்</option>
+                    <option value="வசந்தம்">வசந்த காலம்</option>
+                    <option value="பருவமழை">பருவ மழை</option>
+                </select>
+                <button type="submit">பயிர் ஆலோசனை பெறுங்கள்</button>
+            </form>
+            <div id="crop-suggestions"></div>
+        </section>
+        
+        <section id="soil-management-section">
+            <h2> மண் வகையைத் தேர்ந்தெடுக்கவும்  </h2>
+            <form id="soil-management-form">
+                <label for="soil-condition">மண்ணின் நிலை:</label>
+                <select id="soil-condition"  required>
+                    <option value="வண்டல்">வண்டல் மண்</option>
+                    <option value="கருப்பு">கருப்பு மண்</option>
+                    <option value="சிவப்பு">செம்மண்</option>
+                    <option value="மலை">மலை மண்</option>
+                    <option value="வறண்ட">வறண்ட மண்</option>
+                    <option value="கரிமண்">கரி மண்</option>
+                    <option value="உவர்நிலம்">உவர்மண்</option>
+                </select>
+                <button type="submit">உதவிக்குறிப்புகள்</button>
+            </form>
+            <div id="soil-tips"></div>
+        </section>
+        
+        <section id="disease-prediction-section">
+            <h2> பயிர் நோய்களை கணித்தல்</h2>
+            <form id="disease-prediction-form" enctype="multipart/form-data">
+                <label for="crop-name"> பயிரின் பெயர்:</label>
+                <select id="crop-name" required>
+                    <option value="தக்காளி">தக்காளி</option>
+                    <option value="கோதுமை">கோதுமை</option>
+                    <option value="அரிசி">அரிசி</option>
+                    <option value="மக்காச்சோளம்">மக்காச்சோளம்</option>
+                    <option value="உருளைகிழங்கு">உருளைகிழங்கு</option>
+                    <option value="சோயாபீன்">சோயாபீன்</option>
+                    <option value="வரகு">வரகு</option>
+                    <option value="கரும்பு">கரும்பு</option>
+                    <option value="வாழை">வாழை</option>
+                    <option value="ஆரஞ்சு">ஆரஞ்சு</option>
+                    <option value="ஆப்பிள்">ஆப்பிள்</option>
+                    <option value="திராட்சை">திராட்சை</option>
+                    <option value="பருத்தி">பருத்தி</option>
+                    <option value="மிளகு">மிளகு</option>
+                    <option value="காரட்">காரட்</option>
+                    <option value="லேட்டூஸ்">லேட்டூஸ்</option>
+                    <option value="சோளம்">சோளம்</option>
+                    <option value="வேர்க்கடலை">வேர்க்கடலை</option>
+                    <option value="முட்டைகோஸ்">முட்டைகோஸ்</option>
+                    <option value="வெங்காயம்">வெங்காயம்</option>
+                </select>
+                <button type="submit">நோயைக் கணிக்கவும்</button>
+            </form>
+            <div id="disease-prediction-result"></div>
+        </section>
+    </main>
+    <footer>
+        <!--About Us-->
+        <div class="contact-us">
+            <h2 id="contact">Contact Us</h2>
+            <p><strong>Address:</strong> 1234 ABC Street, Chennai , TamilNadu , 600001</p>
+            <p><strong>Phone:</strong> +1 (123) 456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@example.com"> abc@example.com</a></p>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/example" class="icon"><i class='bx bxl-facebook-square' ></i></a>
+                <a href="https://www.twitter.com/example" class="icon"><i class='bx bxl-twitter' ></i></a> 
+                <a href="https://www.instagram.com/example" class="icon"><i class='bx bxl-instagram-alt' ></i></a> 
+                <a href="https://www.linkedin.com/company/example" class="icon"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="tamil.js"></script>
+</body>
+</html>
