@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crop and Soil Management System</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- box icons-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- swipper css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-leaf'></i>SoilSavvy</a>
+        <li><a href="index.html" id="list">Home</a></li>
+        <li><a href="home.html"id="list">Register</a></li>
+        <li><a href="todo.html"id="list">Schedule</a></li>
+        <li><a href="article.html"id="list">Article</a></li>
+    </header>
+    <main>
+        <section id="crop-section">
+            <h2>Add New Crop</h2>
+            <form id="crop-form">
+                <label for="crop-name">Crop Name:</label>
+                <input type="text" id="crop-name" required>
+                <label for="soil-condition">Soil Type:</label>
+                <input type="text" id="soil-condition" required>
+                <label for="growth-stage">Start Date:</label>
+                <input type="text" id="growth-stage" required>
+                <button type="submit">Add Crop</button>
+            </form>
+        </section>
+        <section id="crop-list-section">
+            <h2>Crop List</h2>
+            <ul id="crop-list">
+                <!-- Crop items will be added here dynamically -->
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <!--About Us-->
+        <div class="contact-us">
+            <h2 id="contact">Contact Us</h2>
+            <p><strong>Address:</strong> 1234 ABC Street, Chennai , TamilNadu , 600001</p>
+            <p><strong>Phone:</strong> +91 8072615524</p>
+            <p><strong>Email:</strong> <a href="mailto:contact@example.com"> amankc@outlook.com</a></p>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/Mahesh.yalavarthy/" class="icon"><i class='bx bxl-facebook-square' ></i></a>
+                <a href="https://x.com/AmanKum70459658" class="icon"><i class='bx bxl-twitter' ></i></a> 
+                <a href="https://www.instagram.com/amm._.1605/" class="icon"><i class='bx bxl-instagram-alt' ></i></a> 
+                <a href="https://www.linkedin.com/in/aman-kumar-479b152a4/" class="icon"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+    </footer>
+    <script src="todo.js"></script>
+</body>
+</html>
