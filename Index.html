@@ -1,0 +1,330 @@
+
+/* google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    max-width: 900px;
+    margin: auto;
+    color: var(--text-color);
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+     
+     
+    
+}
+
+:root{
+    --green-color: #3cb815;
+    --light-green-color: #c0eb7b;
+    --bg-color:#fff;
+    --text-color: #1a2428;
+}
+
+section{
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+    background-color: #c9f7bb;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header{
+    width: 100%;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    height: 50%;
+    
+}
+
+ li{
+    padding: 4px;
+    width: 100%;
+}
+#list:hover{
+    background-color: #92f573;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 4rem;
+    font-weight: 600;
+    color:white;
+    column-gap: 0.5rem;
+    padding-right: 80px;
+}
+
+.logo .bx{
+    font-size: 4rem;
+    color: black;
+}
+
+#home{
+    height: 320px;
+    color: #92f573;
+}
+
+
+.container{
+    min-height: 800px;
+    display: flex;
+    color: #4fb752;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container img{
+    width: 200px;
+    position: absolute;
+    bottom: 500px;
+    right: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: auto;
+}
+
+.home-text{
+    padding: 50px 60px ;
+    justify-content: space-around;
+    max-width: 900px;
+    margin: auto;
+}
+
+.home-text span{
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--green-color);
+    max-width: 900px;
+    margin: auto;
+}
+
+.home-text h1{
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.btn{
+    padding: 0.6rem 1rem;
+    background: #3cb815;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 00.5rem;
+    max-width: 160px;
+}
+
+.btn .bx{
+    padding: 4px;
+    background: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 1rem;
+    font-size: 20px;
+    margin: auto;
+}
+
+.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+
+.heading h1{
+    font-size: 5rem ;
+    font-weight: 600;
+    padding: 2rem;
+    max-width: 900px;
+    margin: auto;
+}
+.heading span{
+    color: var(--green-color);
+}
+.button-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+button{
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    background-color: #4fb752;
+    color: black;
+    cursor: pointer;
+}
+.button {
+    width:100%;
+    height:300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: inherit;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+.button:hover {
+    transform: scale(1.1);
+}
+.button:nth-child(1){
+    background-image: url("rice.jpg");
+}
+.button:nth-child(2) {
+    background-image: url("wheat.jpg");
+}
+.button:nth-child(3) {
+    background-image: url("cotton.webp");
+}
+.button:nth-child(4) {
+    background-image: url("sugarcane.jpg");
+}
+.button:nth-child(5) {
+    background-image: url("tea.webp");
+}
+.button:nth-child(6) {
+    background-image: url("fingermillet.jpg");
+}
+.button:nth-child(7) {
+    background-image:url("maize.jpg") ;
+}
+.button:nth-child(8) {
+    background-image: url("black.jpg");
+}
+.button:nth-child(9) {
+    background-image: url("groundnut.jpg");
+}
+.button:nth-child(10) {
+    background-image: url("oats.jpg");
+}
+
+table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 2px solid white;
+    background-color: #fff;
+}
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: rgb(82, 186, 82);
+}
+.highlight {
+    font-weight: bold;
+    color: blue;
+}
+.form-container {
+    background-color: rgb(55, 150, 31);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.form-container h2 {
+    color: green;
+    margin-bottom: 1rem;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+.form-group label {
+    display: block;
+    
+}
+.form-group input, .form-group select, .form-group textarea {
+    width: 100%;
+    
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+main {
+    padding: 1rem;
+    max-width: 1000px;
+    margin: auto;
+    
+}
+h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 0.5rem;
+}
+
+input, #crop-suggestions, #soil-tips, #disease-prediction-result{
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    width: 100%;
+    
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+footer{
+    background-color: #1b191c;
+    color: white;
+    padding: 4.5rem 0 1.5rem 4.5rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    content: inherit;
+}
+.icon .bx{
+    font-size: 24px;
+    color: white;
+}
+
+.scroll{
+    width: 100%;      
+    height: 1000px;   
+    overflow-y: hidden; 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+
+
